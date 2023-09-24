@@ -1,6 +1,6 @@
 Make sure you have Mocha and Axios installed in your project:-
 
-1.`npm install mocha axios`
+1.`npm install mocha axios chai`
 
 How to run the tests -
 
