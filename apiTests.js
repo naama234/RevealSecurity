@@ -273,6 +273,7 @@ describe("CRUD Operations", () => {
     });
   });
 
+  //**************************************THIS IS A BUG**************************************************
   describe("DELETE Request - empty list", () => {
     it("should delete from an empty list - this is a bug", async () => {
       // The list is empty and we try to delete from it but we get 500
@@ -302,6 +303,7 @@ describe("CRUD Operations", () => {
       expect(response.data).to.have.property("main_key", MAIN_KEY_NAME);
     });
 
+    //**************************************THIS IS A BUG**************************************************
     it("should not delete a nonexistent key - this is a bug", async () => {
       // Should give keyError if you try to delete a nonexistent key but we get 200 success
       const response = await axios.delete(apiUrl, {
